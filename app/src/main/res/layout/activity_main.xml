@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#41729F">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_margin="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/cardView">
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewFlipper"/>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best of the Week"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:padding="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_menu_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cusom_layout"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/layout1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtdesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Design Web"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtdesign"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Crition Brin"
+                android:textColor="#D5D4D4"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/custom_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_play" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cusom_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/layout2"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Science"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:id="@+id/txtData"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtData"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Thomas Muller"
+                android:textColor="#D5D4D4"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/custom_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_play" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cusom_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/layout3"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Android Studio"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAndroid"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Donal Hau"
+                android:textColor="#D5D4D4"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/custom_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_play" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

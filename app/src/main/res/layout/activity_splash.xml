@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SplashActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#41729F"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/img_book"
+            android:layout_marginTop="60dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learning Never"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exhausts the Mind"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose from over 100,000 online \nvide courses with new additions published \n every month"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="7dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Access The Course"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_btn"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnAccess"/>
+    </LinearLayout>
+</layout>

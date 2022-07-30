@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#41729F"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:id="@+id/banner"
+            android:src="@drawable/learn"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_course"
+            android:layout_below="@id/banner"
+            android:id="@+id/cirle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btnLearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cirle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_btn"
+            android:padding="10dp"
+            android:text="Learning Now"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:layout_below="@id/btnLearn"
+            android:text="See More"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnSee"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:layout_below="@id/btnSee"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnNext"/>
+    </RelativeLayout>
+</layout>
