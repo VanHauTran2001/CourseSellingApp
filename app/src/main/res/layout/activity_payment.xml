@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,86 +7,122 @@
     android:background="#41729F"
     android:orientation="vertical"
     tools:context=".PaymentActivity">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:text="Pay For Course"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="280dp"
             android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:layout_marginBottom="10dp"
+            android:id="@+id/imgPay"
             android:src="@drawable/ic_credit_card" />
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/custom_btn"-->
+<!--            android:text="$1500 For Web Design"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:id="@+id/pay1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pay2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/custom_btn"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="$2500 For Android Studio"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pay3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/custom_btn"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="$1500 For Data Science"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pay4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/custom_btn"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="$500 For Java Backend"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pay5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/custom_btn"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="$2500 For IOS Programming"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+                android:text="Next"
+                android:background="@drawable/custom_btn"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/imgPay"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/btnNext"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
             android:background="@drawable/custom_btn"
-            android:text="$1500 For Web Design"
-            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_below="@id/imgPay"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:id="@+id/pay1"/>
+            android:id="@+id/btnPayment"/>
 
-        <Button
-            android:id="@+id/pay2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/custom_btn"
-            android:padding="10dp"
-            android:text="$2500 For Android Studio"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/pay3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/custom_btn"
-            android:padding="10dp"
-            android:text="$1500 For Data Science"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/pay4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/custom_btn"
-            android:padding="10dp"
-            android:text="$500 For Java Backend"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/pay5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/custom_btn"
-            android:padding="10dp"
-            android:text="$2500 For IOS Programming"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-</LinearLayout>
+</RelativeLayout>

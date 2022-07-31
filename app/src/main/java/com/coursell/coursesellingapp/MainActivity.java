@@ -2,6 +2,7 @@ package com.coursell.coursesellingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,32 +15,30 @@ import com.bumptech.glide.Glide;
 import com.coursell.coursesellingapp.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private List<Course> courseList;
+    private CourseAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         ActionViewFliper();
-        binding.layout1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,DetailsActivity.class));
-            }
-        });
-        binding.layout2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,DetailsActivity.class));
-            }
-        });
-        binding.layout3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,DetailsActivity.class));
-            }
-        });
+       initRcyler();
+    }
+
+    private void initRcyler() {
+        courseList = new ArrayList<>();
+        courseList.add(new Course("Web Design","Crition Brin"));
+        courseList.add(new Course("Android Studio","Donal Hau"));
+        courseList.add(new Course("Data Science","Thomas Muller"));
+        courseList.add(new Course("Programming","Thomas Mulk"));
+        courseList.add(new Course("IOS Program","Luka modrics"));
+        adapter = new CourseAdapter(this,courseList);
+        binding.recylerCourse.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        binding.recylerCourse.setAdapter(adapter);
     }
 
     private void ActionViewFliper() {

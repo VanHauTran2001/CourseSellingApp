@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 
 public class PaymentActivity extends AppCompatActivity {
-    Button pay1,p2,p3,p4,p5;
+    Button btnNext,btnPay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,32 +22,18 @@ public class PaymentActivity extends AppCompatActivity {
     }
 
     private void onClick() {
-        pay1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customDialog();
-            }
-        });
-        p2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customDialog();            }
-        });
-        p3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customDialog();            }
-        });
-        p4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customDialog();            }
-        });
-        p5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customDialog();            }
-        });
+       btnNext.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               finish();
+           }
+       });
+       btnPay.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               customDialog();
+           }
+       });
     }
 
     private void customDialog() {
@@ -71,10 +58,7 @@ public class PaymentActivity extends AppCompatActivity {
     }
 
     private void intitButton() {
-        pay1 = findViewById(R.id.pay1);
-        p2 = findViewById(R.id.pay2);
-        p3 = findViewById(R.id.pay3);
-        p4 = findViewById(R.id.pay4);
-        p5 = findViewById(R.id.pay5);
+        btnNext = findViewById(R.id.btnNext);
+        btnPay = findViewById(R.id.btnPayment);
     }
 }
